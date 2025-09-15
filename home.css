@@ -1,0 +1,410 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e3e6f3;
+    color: #222;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+h6 {
+    font-size: 12px;
+    font-weight: 700;
+    color: #222;
+}
+p {
+    font-size: 16px;
+    margin: 15px 0 20px 0;
+    color: #222;
+}
+section-p1{
+padding: 40px 80px;
+}
+section-m1{
+    margin: 40px 0;
+}
+body{
+    width: 100%;
+}
+#header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px 80px;
+background-color: #e3e6f3;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+transition: 0.3s ease;
+width: 100%;
+border: 1px solid #cce7d0;
+}
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 200px;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+  flex-wrap: wrap;
+}
+#navbar li {
+ list-style: none;
+ padding: 0 20px;
+ position: relative;
+}
+#navbar li a {
+text-decoration: none;
+font-size: 16;
+font-weight: 600;
+color: #222;
+}
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+#navbar li a.active::after,
+#navbar li a:hover:after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/*home page*/
+#hero {
+    height: 90vh;
+    width: 100%;
+    background-image: url("img/hero4.png");
+    background-size: cover;
+    background-position: top 25% right 0;
+    background-repeat: no-repeat;
+    padding: 0 80px;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+#hero h4 {
+    padding-bottom: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#hero h1{
+    color: #088178;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#hero h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#hero button {
+    width: 100px;
+    height: 40px;
+    background-image: url("image/button.png");
+    background-size: cover; /* hoặc contain */
+    background-repeat: no-repeat;
+    border: 0;
+    background-position: 5%;
+    background-color: transparent;
+    color: #088178;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#feature .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover {
+    box-shadow: 10px 20px 34px rgba(0, 0, 0, 0.03);
+}
+
+#feature .fe-box h6 {
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;    
+}
+
+#feature .fe-box image {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#feature .fe-box:nth-child(2) h6 {
+    background-color: #cdebbc;
+}
+
+#feature .fe-box:nth-child(3) h6 {
+    background-color: #d1e8f2;
+}
+
+#feature .fe-box:nth-child(4) h6 {
+    background-color: #cdd4f8;
+}
+
+#feature .fe-box:nth-child(5) h6 {
+    background-color: #f6dbf6;
+}
+
+#feature .fe-box:nth-child(6) h6 {
+    background-color: #fff2e5;
+}
+
+#products1 {
+    text-align: center;
+    align-items: center;
+}
+
+#products1 .pro {
+    width: 23%;
+    padding: 10px 12px;
+    min-width: 250px;
+    border: 1px solid #cce7d0;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    transition: 0.2 ease;
+}
+
+#products1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#products1 .pro .des span {
+    margin: 0px 0px;
+    font-size: 12px;
+    color: #606063;
+}
+
+#products1 .pro .des h5 {
+    margin: 0px 0px;
+    font-size: 14px;
+}
+
+#products1 .pro h4 {
+    margin: 0px 0px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#products1 .pro a {
+    margin: 0px 0px;
+}
+
+#products1 .pro a i:hover {
+    color: #088178;
+    font-size: 12px;
+}
+
+#products1 .pro a i {
+    color: #222;
+}
+
+#products1 .star i  {
+    color: yellow;
+}
+
+#products1 .pro:hover {
+    box-shadow: 5px 2px rgba(0, 0, 0, 0.06);
+}
+
+#products1 .pro-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#products1 .des {
+    text-align: start;
+}
+
+#newsletters {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(img/banner/b14.png);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+
+#newsletters .newtext {
+    margin-left: 100px;
+}
+
+#newsletters .form {
+    margin-right: 50px;
+    display: flex;
+}
+
+#newsletters h4 {
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+#newsletters p {
+    color: rgb(100, 96, 96);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#newsletters p span {
+    color: rgb(116, 116, 33)
+}
+
+#newsletters input {
+    border-radius: 4px;
+    border: 1px solid #606063;
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletters button {
+    color: white;
+    background-color: #088178;
+    white-space: nowrap;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+footer .col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-right: 200px;
+}
+
+footer .col {
+    margin-left: 100px;
+}
+
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+footer .follow i:hover,
+footer a:hover {
+    color: #088178;
+    cursor: pointer;
+}
+
+footer .copyright {
+    text-align: center;
+    width: 100%;
+}
+
+
+
+/* 4. Product Card 3D Hover */
+#products1 .pro {
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+#products1 .pro:hover {
+    transform: rotateY(10deg) scale(1.03);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* ===== 1. Navbar 3D Hover ===== */
+#navbar li a {
+    position: relative;
+    display: inline-block;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#navbar li a:hover {
+    transform: translateY(-3px) scale(1.1) rotateX(10deg);
+    color: #088178;
+}
+
+/* 2. Hero Parallax 3D */
+#hero {
+    perspective: 1000px;
+    overflow: hidden;
+    position: relative;
+}
+#hero h1, #hero h2, #hero h4, #hero p, #hero button {
+    transform: translateZ(30px);
+    transition: transform 0.5s ease;
+}
+#hero:hover h1 {
+    transform: translateZ(50px) rotateY(5deg);
+}
+#hero:hover button {
+    transform: translateZ(60px) scale(1.1);
+}
+
+/* 3. Feature Box 3D Flip */
+#feature .fe-box {
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+#feature .fe-box:hover {
+    transform: rotateY(15deg) translateZ(10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}

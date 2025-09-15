@@ -1,0 +1,341 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e3e6f3;
+    color: #222;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+h6 {
+    font-size: 12px;
+    font-weight: 700;
+    color: #222;
+}
+p {
+    font-size: 16px;
+    margin: 15px 0 20px 0;
+    color: #222;
+}
+section-p1{
+padding: 40px 80px;
+}
+section-m1{
+    margin: 40px 0;
+}
+body{
+    width: 100%;
+}
+#header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px 80px;
+background-color: #e3e6f3;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+transition: 0.3s ease;
+width: 100%;
+border: 1px solid #cce7d0;
+}
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 200px;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+  flex-wrap: wrap;
+}
+#navbar li {
+ list-style: none;
+ padding: 0 20px;
+ position: relative;
+}
+#navbar li a {
+text-decoration: none;
+font-size: 16;
+font-weight: 600;
+color: #222;
+}
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+#navbar li a.active::after,
+#navbar li a:hover:after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/*product page*/
+
+#newsletters {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(img/banner/b14.png);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+
+#newsletters .newtext {
+    margin-left: 100px;
+}
+
+#newsletters .form {
+    margin-right: 50px;
+    display: flex;
+}
+
+#newsletters h4 {
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+#newsletters p {
+    color: rgb(100, 96, 96);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#newsletters p span {
+    color: rgb(116, 116, 33)
+}
+
+#newsletters input {
+    border-radius: 4px;
+    border: 1px solid #606063;
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletters button {
+    color: white;
+    background-color: #088178;
+    white-space: nowrap;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+footer .col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-right: 200px;
+}
+
+footer .col {
+    margin-left: 100px;
+}
+
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+footer .follow i:hover,
+footer a:hover {
+    color: #088178;
+    cursor: pointer;
+}
+
+footer .copyright {
+    text-align: center;
+    width: 100%;
+}
+
+.product-tail {
+    margin-bottom: 100px;
+}
+
+#tail-product .des{
+text-align: start;
+}
+
+#tail-product .pro .des span {
+    margin: 0px 0px;
+    font-size: 25px;
+    color: #606063;
+}
+
+#tail-product .pro .des h5 {
+    margin: 0px 0px;
+    font-size: 25px;
+}
+
+#tail-product .pro h4 {
+    margin: 0px 0px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#tail-product .pro a {
+    margin: 0px 0px;
+}
+
+#tail-product .pro a i:hover {
+    color: #088178;
+}
+
+#tail-product .pro a i {
+    color: #222;
+}
+
+#tail-product .star i  {
+    color: yellow;
+}
+
+#tail-product .pro {
+    min-width: 250px;
+    margin-left: 100px;
+}
+
+#tail-product .group-img {
+    display: flex;
+    flex-direction: row;   /* ảnh nằm ngang */
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+#tail-product .main-img img {
+    width: 400px;          /* ảnh chính to */
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#tail-product .relative-img {
+    display: flex;
+    flex-direction: column;  /* các ảnh phụ nằm dọc */
+    gap: 10px;
+    justify-content: flex-start;
+    width: 30%;
+}
+
+#tail-product .relative-img img {
+    width: 80px;            /* ảnh phụ nhỏ */
+    height: auto;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+
+#tail-product button {
+    color: white;
+    background-color: #088178;
+    border: 1px solid black;
+    border-radius: 4px;
+    white-space: none;
+    border-top: 1px solid rgb(126, 122, 122);
+    border-left: 1px solid rgb(126, 122, 122);
+    cursor: pointer;
+}
+
+#tail-product .product-tail button:active {
+    animation: flash 0.6s ease;
+    border-bottom: 1px solid rgb(126, 122, 122);
+    border-right: 1px solid rgb(126, 122, 122);
+}
+
+#tail-product .information-product {
+    flex-shrink: 0;
+    margin-left: -200px; /* đẩy ngược lại gần ảnh */
+}
+
+/* Nhóm ảnh chính + ảnh phụ có hiệu ứng nghiêng 3D */
+#tail-product .group-img {
+    perspective: 1000px;  /* Cần thiết để tạo chiều sâu */
+}
+
+#tail-product .main-img img, 
+#tail-product .relative-img img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transform-style: preserve-3d;
+}
+
+/* Hover vào ảnh chính */
+#tail-product .main-img img:hover {
+    transform: rotateY(10deg) rotateX(5deg) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover vào ảnh phụ */
+#tail-product .relative-img img:hover {
+    transform: rotateY(8deg) rotateX(5deg) scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Khi click vào ảnh phụ: ảnh chính phóng to nhẹ */
+#tail-product .main-img img.active {
+    transform: rotateY(0deg) rotateX(0deg) scale(1.1);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* ===== 1. Navbar 3D Hover ===== */
+#navbar li a {
+    position: relative;
+    display: inline-block;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#navbar li a:hover {
+    transform: translateY(-3px) scale(1.1) rotateX(10deg);
+    color: #088178;
+}
